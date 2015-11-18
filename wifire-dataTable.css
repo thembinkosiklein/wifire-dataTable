@@ -1,0 +1,142 @@
+/* 
+    File        : Wi-Fire DataTables Stylesheet Settings
+    Created on  : Nov 18, 2015
+    Author      : Rodney <rodney@wifire.co.za>
+*/
+
+
+/* ============= FILTERS ============= */
+
+div.dataTables_wrapper div.dataTables_length,
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_paginate {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 8px;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    margin-top: 7px;
+}
+
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_paginate {
+    float: right;
+}
+
+    div.dataTables_wrapper div.dataTables_filter input {
+        display: inline-block;
+        width: 83%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: none;
+        border-color: #d2d6de;
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input:not(select) {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input:focus {
+        border-color: #424242;
+        box-shadow: none;
+        outline: 0;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter label {
+        width: 100%;
+        text-align: right;
+    }
+
+/* ============= SORTING <THEAD> ============= */
+
+table.dataTable thead th,
+table.dataTable thead th.sorting,
+table.dataTable thead th.sorting_asc,
+table.dataTable thead th.sorting_desc {
+    vertical-align: top;
+    min-width: 38px;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after {
+/*    position: relative;
+    left: 0;
+    display: inline-block;
+    padding-left: 8px;*/
+    top: 8px;
+    vertical-align: top;
+}
+    
+/* ============= PAGINATIN ============= */
+
+div.dataTables_wrapper div.dataTables_paginate {
+    padding-top: 5px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate .paginate_button {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  color: inherit;
+  margin-left: -1px;
+  padding: 4px 10px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.previous {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.next {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate .paginate_button:hover {
+  background-color: #f4f4f4;
+  border-color: #DDDDDD;
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+}
+
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.current,
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.current:hover,
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.current:focus {
+  background-color: #f4f4f4;
+  border-color: #DDDDDD;
+  color: inherit;
+  cursor: default;
+  z-index: 2;
+}
+
+div.dataTables_wrapper div.dataTables_paginate .paginate_button.disabled {
+  color: #a2a2a2;
+  cursor: not-allowed;
+}
